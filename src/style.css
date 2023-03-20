@@ -1,0 +1,56 @@
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    max-width: 400px;
+    width: 300px;
+}
+.add-btn {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    height: 150px;
+    padding: 0;
+}
+
+.todo-list .todo-item {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.todoed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.visibility-filters {
+    display: flex;
+    justify-content: start;
+}
+
+.visibility-filters .filter-item {
+    display: inline-block;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.visibility-filters .filter-item.active {
+    text-decoration: underline;
+    color: blue;
+}
